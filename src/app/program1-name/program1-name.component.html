@@ -1,0 +1,11 @@
+<!-- program1-name.component.html -->
+<div>
+    <h2>{{componentTitle}}</h2>
+    <br/>
+    <label>First Name:</label>
+    <input [(ngModel)]="firstName" (input)="updateFullName()" />
+    <label>Last Name:</label>
+    <input [(ngModel)]="lastName" (input)="updateFullName()" />
+    <br/><br/>
+    <p>Your Full Name: <b>{{ fullName }}</b></p>
+</div>

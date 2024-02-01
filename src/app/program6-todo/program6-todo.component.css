@@ -1,0 +1,25 @@
+.trCls{
+    background-color: blue;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: solid;
+    font-style: oblique;
+}
+table,td,tr{
+    border: 1px solid;
+}
+div{
+    font: optional;
+}
+button{
+    border-radius: 3px solid;
+    /* width: 90px; */
+    color: black;
+    background-color: lightgrey;
+}
+h2{
+    font-size: 31px;
+}
+tbody{
+    background-color: lightgray;
+}

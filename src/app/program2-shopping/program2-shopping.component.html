@@ -1,0 +1,15 @@
+<!--program2-shopping.component.html -->
+<div>
+    <h2>{{componentTitle}}</h2>
+    <br/>
+    <ul>
+        <li *ngFor="let item of items; let i = index">
+            {{ item }}
+            <button (click)="removeItem(i)">Remove</button>
+        </li>
+    </ul>
+    <div>
+        <input [(ngModel)]="newItem" placeholder="New Item" />
+        <button (click)="addItem(newItem)">Add</button>
+    </div>
+</div>

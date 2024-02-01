@@ -1,0 +1,38 @@
+div{
+    color: blue;
+    background-color: cadetblue;
+    border-top-right-radius: 500px;
+    border-bottom-left-radius: 900px;
+}
+h2{
+    font: optional;
+}
+form{
+    background-color: chartreuse;
+}
+label{
+    font-style: italic;
+    background-color: yellowgreen;
+    border-radius: 35%;
+}
+.div2{
+    background-color: violet;
+    border-top-left-radius: 500px;
+    border-bottom-right-radius: 900px;
+}
+.div3{
+    background-color: aqua;
+    border-top-left-radius: 500px;
+    border-bottom-right-radius: 900px;
+}
+small{
+    color: red;
+}
+button{
+    color: chocolate;
+    background-color: tealte;
+}
+input{
+    background-color: yellowgreen;
+    border-radius: 20%;
+}

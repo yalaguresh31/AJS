@@ -1,0 +1,33 @@
+<div>
+    <h2>{{componentTitle}}</h2>
+    <br/>
+    <form>
+        <label>Name:</label>
+        <input type="text" [(ngModel)]="name" name="name" />
+        &nbsp;&nbsp;&nbsp;
+        <label>Email:</label>
+        <input type="email" [(ngModel)]="email" name="email"/>
+        <input type="hidden" [(ngModel)]="id" name="id"/>
+        <input type="hidden" [(ngModel)]="index" name="index"/>
+        <button type="button" *ngIf="!isEditing" (click)="addUser()">Add User</button>
+        <button type="button" *ngIf="isEditing" (click)="updateUser()">Update User</button>
+    </form>
+    <table>
+        <thead>
+            <tr class="trCls">
+                <th>Name</th>
+                <th>Email ID</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users;let i=index">
+                <td>{{ user.name}}</td>
+                <td>{{ user.email }}</td>
+                <td><button (click)="editUser(user,i)">Edit</button>
+                <button (click)="deleteUser(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+            

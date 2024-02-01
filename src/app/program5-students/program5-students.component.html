@@ -1,0 +1,29 @@
+<div>
+    <h2>{{componentTitle}}</h2>
+    <br/>
+    <label for="numberOfStudents">Enter the number of students:</label>
+    <input type="text" id="numberOfStudents" [(ngModel)]="numberOfStudents"/>
+    <button (click)="generateStudentDetails()">Generate Student
+    Details</button>(Max count:15)
+    <div *ngIf="students.length > 0">
+        <p>Total Students: {{ students.length }}</p>
+        <table>
+            <thead>
+                <tr class="trCls">
+                    <th>USN</th>
+                    <th>Name</th>
+                    <th>Contact number</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                    <th>{{student.usn}}</th>
+                    <th>{{student.name}}</th>
+                    <th>{{student.contactNum}}</th>
+                    <th>{{student.cgpa}}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div> 
